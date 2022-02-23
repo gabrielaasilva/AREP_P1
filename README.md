@@ -6,3 +6,9 @@
 
 ![img_1.png](Images/img_1.png)
 ![img.png](Images/img.png)
+
+## Despliegeu Heroku
+
+![img.png](img.png)
+
+La ejecución se mantiene solo por un momento y luego genera error en el aplicativo. 
