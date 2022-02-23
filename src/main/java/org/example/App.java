@@ -4,7 +4,7 @@ import org.example.server.WeatherServer;
 
 public class App
 {
-    public static void main( String[] args ) {
+    public static void main( String[] args) {
         try {
             WeatherServer.getInstance().startServer(args);
             } catch (Exception e) {

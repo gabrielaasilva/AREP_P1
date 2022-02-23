@@ -9,11 +9,13 @@ import java.net.URL;
 public class WeatherServer {
 
         private static WeatherServer _instance = new WeatherServer();
+        private String city;
 
         public String startServer(String[] args) throws IOException {
 
             StringBuilder result = new StringBuilder();
-            URL url = new URL("api.openweathermap.org/data/2.5/weather?q={city name}&appid={9c5f6d38ad527fb351aa369d6ca3a073}");
+            URL url = new URL("http://api.openweathermap.org/data/2.5"+"/weather?q=London&appid=9c5f6d38ad527fb351aa369d6ca3a073");
+
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             try {
