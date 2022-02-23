@@ -13,7 +13,7 @@ public class WeatherServer {
         public String startServer(String[] args) throws IOException {
 
             StringBuilder result = new StringBuilder();
-            URL url = new URL("https://openweathermap.org/");
+            URL url = new URL("api.openweathermap.org/data/2.5/weather?q={city name}&appid={9c5f6d38ad527fb351aa369d6ca3a073}");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             try {
